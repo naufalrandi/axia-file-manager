@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  api:
+    build:
+        context: ./
+        target: filemanager
+    volumes:
+    - ./:/usr/src/app
+    ports:
+      - 5999:5999
+    restart: always
